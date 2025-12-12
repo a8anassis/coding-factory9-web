@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+
+    <style>
+
+        * {                                 /*Universal selector*/
+            box-sizing: border-box;
+            padding: 0;
+        }
+
+        ul {
+            /* display */
+            display: flex;  /* default Horizontal alignment*/
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            /*Visual*/
+            list-style: none;
+        }
+
+        a {
+            /*Display*/
+            display: inline-block;
+
+            /*Box Model*/
+            padding: 5px 80px;
+            border: 1px solid black;
+
+            /*Typography*/
+            font-weight: bold;
+            text-decoration: none;
+            
+            /*Visual*/
+            color: black;
+            cursor: pointer;
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">.NET Core</a></li>
+        <li><a href="#">Angular</a></li>
+    </ul>
+
+</body>
+</html>
