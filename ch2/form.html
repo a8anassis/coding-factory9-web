@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        *, ::after, ::before {
+            box-sizing: border-box;
+            padding: 0;
+            /* margin: 0; */
+        }
+
+        .row {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: inline-block;
+            width: 80px;
+        }
+
+        .input-item {
+            width: 200px;
+            height: 25px;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding-left: 5px;
+        }
+
+        .input-item:focus {
+            outline: none;
+        }
+
+        [type='submit'] {
+            margin-left: 85px;
+            margin-top: 10px;
+            padding: 10px 75px;
+            border-radius: 5px;
+            color: white;
+            background-color: blue;
+        }
+
+        [type='submit']:hover {
+            background-color: white;
+            color: blue;
+        }
+
+        h1::after {
+            content: '\2764\FE0F';
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>User Registration</h1>
+    
+    <form action="">
+
+        <div class="row">
+            <label for="username">Username</label>
+            <input class="input-item" type="text" name="" id="username" placeholder="Insert username">
+        </div>
+
+        <div class="row">
+            <label for="email">Email</label>
+            <input class="input-item" type="email" name="" id="email" placeholder="Insert email">
+        </div>
+
+        <div class="row">
+            <label for="password">Password</label>
+            <input class="input-item" type="password" name="" id="password" placeholder="Insert password">
+        </div>
+
+
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    
+    </form>
+</body>
+</html>
