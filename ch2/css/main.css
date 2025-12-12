@@ -1,0 +1,9 @@
+h1 {
+    color: white;
+    background-color: black;
+}
+
+p, li {
+    color: blue;
+    background-color: azure;
+}
