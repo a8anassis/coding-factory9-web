@@ -55,14 +55,14 @@
         <h1 class="text-center font-size-2 mb-2 mt-2">Υποβολή Δήλωσης Καθαρισμού Οικοπέδου</h1>
         <div class="d-flex flex-row align-center ">
           <div>
-            <p><span class="d-block stepper-circle m-auto ">1</span></p>
+            <p><span class="d-block stepper-circle m-auto active">1</span></p>
             <p>Στοιχεία Οικοπέδου</p>
           </div>
           <div class="flex-grow-1">
             <span class="stepper-border-bottom"></span>
           </div>
           <div>
-            <p><span class="d-block stepper-circle m-auto active">2</span></p>
+            <p><span class="d-block stepper-circle m-auto ">2</span></p>
             <p>Στοιχεία Ιδιοκτήτη</p>
           </div>
           <div class="flex-grow-1">
@@ -93,8 +93,76 @@
             <fieldset>
               <legend class="font-size-075 text-lightgrey-500">KAEK</legend>
               <input class="no-border col-12 h-2" type="text" name="" id="">
-              <span class="text-info">Εισάγετε το ΚΑΕΚ του οικοπέδου</span>
             </fieldset>
+            <span class="text-info">Εισάγετε το ΚΑΕΚ του οικοπέδου</span>
+          </div>
+
+          <div class="d-flex flex-row mb-2">
+            <div class="col-6">
+              <fieldset>
+                <legend class="font-size-075 text-lightgrey-500">Νομός</legend>
+                <select class="col-12 h-2 no-border bg-white pl-1" name="" id="">
+                  <option value="">Χανίων</option>
+                  <option value="">Αττικής</option>
+                  <option value="">Ιωαννίνων</option>
+                </select>
+              </fieldset>
+              <span class="text-info">Επιλέξτε Νομό</span>
+            </div>
+
+            <div class="col-6 ml-1">
+              <fieldset>
+                <legend class="font-size-075 text-lightgrey-500">Δήμος</legend>
+                <select class="col-12 h-2 no-border bg-white pl-1" name="" id="">
+                  <option value="">Δήμος 1</option>
+                  <option value="">Δήμος 2</option>
+                  <option value="">Δήμος 3</option>
+                </select>
+              </fieldset>
+              <span class="text-info">Επιλέξτε Δήμο</span>
+            </div>
+          </div>
+
+          <div class="mb-2 d-flex flex-row">
+            <div class="col-6">
+              <input class="col-12 h-25 pl-1" type="text" placeholder="Δημοτική Ενότητα">
+              <span class="text-info">Εισάγετε Δημοτική Ενότητα</span>
+            </div>
+
+            <div class="col-6 ml-1">
+              <input class="col-12 h-25 pl-1" type="text" placeholder="Οικισμός">
+              <span class="text-info">Εισάγετε Οικισμό</span>
+            </div>
+          </div>
+
+          <div class="mb-2 d-flex flex-row"> 
+            <div class="col-4">
+              <fieldset>
+                <legend class="font-size-075 text-lightgrey-500">Οδός</legend>
+                <input class="no-border col-12 h-2 pl-1" type="text" name="" id="">
+              </fieldset>
+              <span class="text-info">Εισάγετε Οδό</span>
+            </div>
+
+            <div class="col-4 ml-1">
+              <fieldset>
+                <legend class="font-size-075 text-lightgrey-500">Αριθμός</legend>
+                <input class="no-border col-12 h-2 pl-1" type="text" name="" id="">
+              </fieldset>
+              <span class="text-info">Εισάγετε Αριθμό</span>
+            </div>
+
+            <div class="col-4 ml-1">
+              <fieldset>
+                <legend class="font-size-075 text-lightgrey-500">T.K</legend>
+                <input class="no-border col-12 h-2 pl-1" type="text">
+              </fieldset>
+              <span class="text-info">Εισάγετε Τ.Κ</span>
+            </div>
+          </div>
+
+          <div class="mb-2 d-flex justify-end">
+            <a class="bg-green text-white p-1 text-decoration-none" href="">Επόμενο</a>
           </div>
         </form>
       </section>
