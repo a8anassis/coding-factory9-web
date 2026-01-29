@@ -15,3 +15,16 @@ header {
   background-attachment: fixed;
   /* min-height: 50%; */
 }
+
+.line {
+  background-color: #006994;
+}
+
+.card-img {
+  height: 250px;
+}
+
+.social a {
+  color: white;
+  font-size: 2rem;
+}
