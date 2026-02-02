@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="bg-gray-900 text-white">
+    <div class="flex flex-wrap justify-between item-center py-3 px-4">
+      <a class="text-lg font-bold" href="">Coding Factory</a>
+    
+      <button class="text-gray-300 lg:hidden hover:text-white border border-gray-300 rounded px-1" id="navbarToggler">
+        <span>
+          <i class="bi bi-list"></i>
+        </span>
+      </button>
+
+      <div class="hidden w-full lg:flex lg:flex-row lg:justify-between lg:w-xl" id="navbarCollapse">
+        <div class="flex flex-col lg:gap-3 lg:flex-row">
+          <a class="text-gray-300 hover:text-white" href="">
+            <i class="bi bi-house"></i>
+            Home
+          </a>
+          <a class="text-gray-300 hover:text-white" href="">Coding Factory</a>
+          <a class="text-gray-300 hover:text-white" href="">AUEB</a>
+        </div>
+
+        <div>
+          <a class="text-gray-300 hover:text-white" href="">We are</a>
+          <a class="text-gray-300 hover:text-white" href="">We innovate</a>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+  <div>
+    <form>
+      <!-- Email -->
+      <div>
+        <label for="fldEmail">Email</label>
+        <div>
+          <span><i class="bi bi-envelope"></i></span>
+          <input type="text" id="fldEmail" placeholder="Email">
+        </div>
+      </div>
+
+      <!-- Password -->
+      <div>
+        <label for="fldPassword">Password</label>
+        <input type="password" placeholder="Password" id="fldPassword">
+      </div>
+
+      <!-- Address 1 -->
+      <div>
+        <label for="fldAddress">Address</label>
+        <div>
+          <span><i class="bi bi-building"></i></span>
+          <input type="text" placeholder="Address" id="fldAddress">
+        </div>
+      </div>
+
+      <!-- City -->
+      <div>
+        <label for="fldCity">City</label>
+        <input type="text" id="fldCity" placeholder="City">
+      </div>
+
+      <!-- State -->
+       <div>
+        <label for="fldState">State</label>
+        <select  id="fldState">
+          <option value="">...</option>
+          <option value="">...</option>
+        </select>
+       </div>
+
+      <!-- Checkbox -->
+      <div>
+        <input type="checkbox" id="fldAgree">
+        <label for="fldAgree">I Agree</label>
+      </div>
+
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  
+  <script>
+    document.getElementById('navbarToggler').addEventListener('click', function(){
+      const menu = document.getElementById('navbarCollapse');
+      menu.classList.toggle('hidden');
+    })
+  </script>
+</body>
+</html>
